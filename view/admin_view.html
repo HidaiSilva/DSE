@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		th.column {
+			padding: 0
+		}
+
+		td {
+			padding: 1px;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		@media (max-width:525px) {
+			.icons-inner {
+				text-align: center;
+			}
+
+			.icons-inner td {
+				margin: 0 auto;
+			}
+
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.mensagem, .resposta_titulo_cliente {
+			font-family: 'Arial';
+			font-size: 16px;
+			color: #4f4d52;
+			
+			min-width: 450px;
+			margin-left: auto;			
+			width: 95%;
+			
+		}
+			
+		.titulo {			
+			font-weight: bold;
+			text-align: center;			
+		}
+
+		div.resposta_titulo_cliente {			
+			font-weight: bold;
+			display:inline;			
+		}
+
+		div.resposta_cliente {	
+			display:inline;	
+		}
+
+		td.texto{			
+			padding-bottom: 20px;
+		}
+
+		/*Coluna na linha - elementos*/
+		.column-element-madeira,
+		.column-element-fogo,
+		.column-element-terra,
+		.column-element-metal,
+		.column-element-agua {
+			font-family: 'Arial';
+			font-size: 16px;
+			font-weight: bold;
+			color: #ffffff;
+			text-align: left;
+			padding: 10px;
+			border-radius: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			min-width: 258px;
+
+		}
+
+		.column-element-madeira {
+			background-color: #067706;
+		}
+
+		.column-element-fogo {
+			background-color: #d30707;
+		}
+
+		.column-element-terra {
+			background-color: #e6d00b;
+		}
+
+		.column-element-metal {
+			background-color: #8c8c8f;
+		}
+
+		.column-element-agua {
+			background-color: #011731;
+		}
+
+		.container img {
+			max-width: 200px;
+			max-height: 150px;
+			width: auto;
+			height: auto;
+		}
+
+		.container02 img {			
+			max-height: 200px;
+			width:100%
+		}
+
+		div.elemento{
+			display: inline-block;
+			width: 48%;
+			padding-left: 20%;
+		}
+
+		div.elemento-resultado {
+			width: 100%;			
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body style="background-color: #FFFFFF; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation"
+		style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;" width="100%">
+		<tbody>
+			<tr>
+				<td>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1"
+						role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; " width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="505">
+										<tbody>
+											<tr>
+												<th class="column"
+													style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top; padding-top: 5px; padding-bottom: 5px;"
+													width="100%">
+													<!--Bunner externo-->
+													<table class=container02 border="0" cellpadding="0" cellspacing="0"
+														class="image_block" role="presentation"
+														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
+														width="100%">
+														<tr>
+															<td style="width:100%;padding-right:0px;padding-left:0px;">
+																<div> <?!= elementos.imagem_banner_ ?></div>
+															</td>
+														</tr>
+													</table>
+
+													<table border="0" bordercolor=#FFFFFF cellpadding="10"
+														cellspacing="0" class="text_block" role="presentation"
+														style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;"
+														width="100%">
+											</tr>
+
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+											<tr>
+												<td class="texto">
+													<!--Txto inicial-->
+												<div class="mensagem">  <div class="titulo">Feng Shui: Descubra seu Elemento</div> </div>
+												</td>
+											</tr>
+
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+											<!--Dados cliente-->
+											<div>
+											<tr>
+												<td class="texto">													
+												<div class="mensagem"><div class="resposta_titulo_cliente" > Nome:  </div> <div class="resposta_cliente" > <?= elementos.nome_client_ ?></div></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="texto">													
+												<div class="mensagem"><div class="resposta_titulo_cliente" > Data de Nacimento:  </div> <div class="resposta_cliente" > <?= elementos.data_client_ ?></div></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="texto">													
+												<div class="mensagem"><div class="resposta_titulo_cliente" > E-mail:  </div> <div class="resposta_cliente" > <?= elementos.email_client_ ?></div></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="texto">													
+												<div class="mensagem"><div class="resposta_titulo_cliente" > Que nota você daria para sua vida atualmente?  </div> <div class="resposta_cliente" > <?= elementos.nota_client_ ?></div></div>
+												</td>
+											</tr>
+											<tr>
+												<td class="texto">													
+												<div class="mensagem"><div class="resposta_titulo_cliente" > O que você espera ao aplicar a técnica Feng Shui em sua vida?  </div> <div class="resposta_cliente" > <?= elementos.frase_client_ ?></div></div>
+												</td>
+											</tr>
+											</div>	
+											<!--Elmentos-->
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div
+															style=" color: #4f4d52; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-weight: bold; text-align: center; padding-top: 5px;">
+															<p style="margin: 0; font-size: 16px;">
+																<!--Seus elemento-->
+																<?= elementos.frase_elemento_destaque_ ?>
+																
+															</p>
+															<hr align="center" noshade>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<!--Vai receber elemento de detaque do JS-->
+											<?!= elementos.elemento_destaque_  ?>
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div
+															style=" color: #4f4d52; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-weight: bold; text-align: center; padding-top: 10px;">
+															<p style="margin: 0; font-size: 16px;">
+																<!--Seus elemento secundario-->
+																<?= elementos.frase_elemento_destaque_secundario_ ?>
+															</p>
+															<hr align="center" noshade>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<!--Vai receber elemento de detaque secundáriosdo JS-->
+											<?!= elementos.elemento_destaque_secundario_ ?>
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+
+											<tr>
+												<td>
+													<!--Espaço-->
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div>
+														<div
+															style=" color: #4f4d52; line-height: 1.2; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-weight: bold; text-align: center; padding-top: 10px;">
+															<p style="margin: 0; font-size: 16px;">Resultado geral</p>
+															<hr align="center" noshade>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+											<tr>
+												<td>
+													<div class="column-element-madeira">
+														<div class="elemento">Madeira</div>
+														<div class="elemento">
+															<?= elementos.madeira_ ?>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="column-element-fogo">
+														<div class="elemento">Fogo</div>
+														<div class="elemento">
+															<?= elementos.fogo_ ?>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="column-element-terra">
+														<div class="elemento">Terra</div>
+														<div class="elemento">
+															<?= elementos.terra_ ?>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="column-element-metal">
+														<div class="elemento">Metal</div>
+														<div class="elemento">
+															<?= elementos.metal_ ?>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="column-element-agua">
+														<div class="elemento">Água</div>
+														<div class="elemento">
+															<?= elementos.agua_ ?>
+														</div>
+													</div>
+												</td>
+											</tr>
+								</td>
+							</tr>
+
+							
+
+					</table>
+					<!--Social-->
+
+					<table class=container border="0" cellpadding="0" cellspacing="0" style="padding-top: 15px;">
+						<tbody>
+							<tr>
+								<td style="font-size: 11px;  text-align: center;" valign="top" >
+									<?!= elementos.imagem_assinatura_ ?></td>
+								<td style="font-size: 12px; color:#4f4d52; font-family: 'Arial';  padding-left: 11px;">
+									<strong style="font-size: 16px;"><?!= elementos.titulo_ ?></strong><br>
+									<?!= elementos.sub_titulo_ ?><br>
+									<?!= elementos.nomes_ ?><br>
+									<?!= elementos.email_assinatura_ ?> <br>
+									<?!= elementos.celulares_ ?> <br>
+                  Instagram: <a href="<?!= elementos.instagram_ ?>" target="_blank">
+ <?!= elementos.instagram_titulo_ ?> </a><br>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</th>
+			</tr>
+		</tbody>
+	</table>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+</body>
+
+</html>
