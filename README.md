@@ -29,7 +29,7 @@ function setUpTrigger() {
 
 - Na planilha na aba “Respostas”, devesse criar os campos que serão apresentados no frontend/email como os resultados da pesquisa.
 
-  ![Aba Resposta](images\img_aba_respostas.PNG) 
+  ![Aba Resposta](DSE\images\img_aba_respostas.PNG) 
 
 - A atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções “buildElements”, “buildComplementaryElements” e “buildInformationToSend” onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
 
