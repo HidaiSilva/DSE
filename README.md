@@ -37,7 +37,7 @@ function setUpTrigger() {
 
 - Na planilha na aba “Configuracao_Email”, devesse criar os campos que serão apresentados no frontend/email, tais como descrição no topo e assinatura do email.
 
-![Aba Configuração Email](images\img_aba_configuracao_email.PNG) 
+![Aba Configuração Email](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_configuracao_email.PNG) 
 
 - Novamente a atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções “buildElements”, “buildComplementaryElements” e “buildInformationToSend” onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
 ### Configuração dos botões 
