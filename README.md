@@ -44,7 +44,7 @@ function setUpTrigger() {
 
 Os botões disponíveis na aba  ``Configuracao_Email`` devem ser vinculado as seguintes funções:
 
-	![Aba Configuração Email Botões](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_configuracao_email_botoes.png) 
+![Aba Configuração Email Botões](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_configuracao_email_botoes.png) 
 
 ------------------
 ## Fluxo de processo
