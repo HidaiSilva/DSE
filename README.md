@@ -6,12 +6,12 @@ Descubra Seu Elemento - projeto de automatização de criação e envio de email
 ## Execução Inicial
 
 - Abrir uma planilha vinculada ao Form; 
-- Aba vinculada ao Form deve ser renomeada para “Respostas”;
-- Criar uma segunda aba com chamada “Configuracao_Email”;
+- Aba vinculada ao Form deve ser renomeada para ``Respostas``;
+- Criar uma segunda aba com chamada ``Configuracao_Email``;
 - Através da planilha abra o App Script;
 - Na aba editor crie três arquivos [client.gs], [admin_view.html] e [client_view.html];
 - Copie os códigos disponíveis aqui no git para os arquivos criados no App Script, conforme seus respectivos nomes e salve o projeto;  
-- Abra o [client.gs]  na função “setUpTrigger” o “.forForm()” deve receber o id do formulário.
+- Abra o [client.gs]  na função ``setUpTrigger`` o ``.forForm()`` deve receber o id do formulário.
 
 ~~~JS
 //Trigger Formulario
@@ -23,29 +23,37 @@ function setUpTrigger() {
 } 
 ~~~
 
-- Ainda no [client.gs], na opção de selecionar função para executar selecione  “setUpTrigger” e clique em executar;
+- Ainda no [client.gs], na opção de selecionar função para executar selecione  ``setUpTrigger`` e clique em executar;
 
 ## Configuração de variáveis disponíveis na planilha aba Respostas
 
-- Na planilha na aba “Respostas”, devesse criar os campos que serão apresentados no frontend/email como os resultados da pesquisa.
+- Na planilha na aba ``Respostas``, devesse criar os campos que serão apresentados no frontend/email como os resultados da pesquisa.
 
   ![Aba Resposta](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_respostas.PNG) 
 
-- A atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções “buildElements”, “buildComplementaryElements” e “buildInformationToSend” onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
+- A atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções ``buildElements``, ``buildComplementaryElements`` e ``buildInformationToSend`` onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
 
 ## Configuração de variáveis disponíveis na planilha aba Configuracao_Email
 
-- Na planilha na aba “Configuracao_Email”, devesse criar os campos que serão apresentados no frontend/email, tais como descrição no topo e assinatura do email.
+- Na planilha na aba ``Configuracao_Email``, devesse criar os campos que serão apresentados no frontend/email, tais como descrição no topo e assinatura do email.
 
 ![Aba Configuração Email](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_configuracao_email.PNG) 
 
-- Novamente a atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções “buildElements”, “buildComplementaryElements” e “buildInformationToSend” onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
-### Configuração dos botões 
-	exemplo imagem
+- Novamente a atenção precisa ser dada nas posições dos campos, pois irão ser chamados pelo  [client.gs] nas funções ``buildElements``, ``buildComplementaryElements`` e ``buildInformationToSend`` onde é realizado um range linha x coluna para saber exatamente quais campos pegar. 
+### Configuração dos botões
+
+Os botões disponíveis na aba  ``Configuracao_Email`` devem ser vinculado as seguintes funções:
+
+	![Aba Configuração Email Botões](https://github.com/HidaiSilva/DSE/blob/main/images/img_aba_configuracao_email_botoes.png) 
+
 ------------------
 ## Fluxo de processo
 
-Imagem
+![Fluxo](https://github.com/HidaiSilva/DSE/blob/main/images/img_fluxo.png) 
+
+------------------
+## Tecnologia
+[App Script](https://developers.google.com/apps-script) 
 
 
 [client.gs]: https://github.com/HidaiSilva/DSE/blob/main/gs/client.gs
